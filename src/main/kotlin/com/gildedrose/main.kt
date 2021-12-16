@@ -10,8 +10,8 @@ fun main() {
         val gildedRose = GildedRose(Inventory.findAll())
         for (i in 1..days) {
             println("----------day $i")
+            gildedRose.updateQuality()
             Inventory.findAll().forEach {
-                gildedRose.updateQuality()
                 println(it.toString())
             }
         }
