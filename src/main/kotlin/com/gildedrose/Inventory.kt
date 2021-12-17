@@ -20,9 +20,12 @@ class Inventory {
                 createItem("+5 Dexterity Vest", 10, 20),
                 createItem(AGED_BRIE, 2, 0),
                 createItem("Elixir of the Mongoose", 5, 7),
+                createItem(SULFURAS, 0, 80),
                 createItem(SULFURAS, -1, 80),
                 createItem(BACKSTAGE, 15, 20),
-                createItem(CONJURED, 3, 50)
+                createItem(BACKSTAGE, 10, 49),
+                createItem(BACKSTAGE, 5, 49),
+                createItem(CONJURED, 3, 6)
         )
 
         fun createItem (name:String, sellIn: Int, quality: Int): Item {

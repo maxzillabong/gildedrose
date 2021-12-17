@@ -13,4 +13,6 @@ Mutation testing was manually performed to make sure the sample data confidently
 GildedRoseTest.updateQuality.approved.txt can be compared to the old file as evidence that there are no regressions.
 Only Conjured mana cake is added in the new approved txt file.
 
-Optionally you can run the Main.kt CLI just for fun.
+Optionally you can run the TexttestFixture and compare this versions console output with the original.
+
+The output for the conjured mana cake should be the only difference.
