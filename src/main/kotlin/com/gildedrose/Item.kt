@@ -11,9 +11,9 @@ open class Item(private var name: String, open var sellIn: Int, open var quality
         sellIn -= 1
         quality -= if (sellIn < 0) 2 else 1 //once sellin drop below 0, quality decrease 2x
         if (quality < 0) quality = 0 // quality cannot drop below 0
-        validate()
+        correct()
     }
-    fun validate () {
+    fun correct () {
         if (quality < 0) {
             quality = 0
         }
@@ -31,7 +31,7 @@ class AgedBrie(override var sellIn:Int, override var quality:Int):
     override fun updateQuality() {
         quality += if (sellIn > 0) 1 else 2
         sellIn -= 1
-        validate()
+        correct()
     }
 }
 
@@ -40,7 +40,7 @@ class Conjured(override var sellIn:Int, override var quality:Int):
     override fun updateQuality() {
         quality -= 2
         sellIn -= 1
-        validate()
+        correct()
     }
 }
 
@@ -54,7 +54,7 @@ class BackStage(override var sellIn:Int, override var quality:Int):
             else -> quality += 1
         }
         sellIn -= 1
-        validate()
+        correct()
     }
 }
 
