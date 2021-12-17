@@ -1,11 +1,5 @@
 package com.gildedrose
 
-const val AGED_BRIE = "Aged Brie"
-const val CONJURED = "Conjured Mana Cake"
-const val BACKSTAGE = "Backstage passes to a TAFKAL80ETC concert"
-const val SULFURAS = "Sulfuras, Hand of Ragnaros"
-
-
 open class Item(private var name: String, open var sellIn: Int, open var quality: Int) {
     open fun updateQuality() {
         sellIn -= 1
@@ -62,16 +56,6 @@ class Sulfuras(override var sellIn:Int, override var quality:Int):
     Item(SULFURAS, sellIn, quality) {
     override fun updateQuality() {
         // does nothing
-    }
-}
-
-fun createItem (name:String, sellIn: Int, quality: Int): Item {
-    return when  {
-        name.equals(AGED_BRIE, true) -> AgedBrie(sellIn,quality)
-        name.equals(CONJURED,true) -> Conjured(sellIn, quality)
-        name.equals(BACKSTAGE,true) -> BackStage(sellIn, quality)
-        name.equals(SULFURAS,true) -> Sulfuras(sellIn, quality)
-        else -> Item(name, sellIn, quality)
     }
 }
 
