@@ -15,8 +15,8 @@ val KNOWN_ITEMS = mapOf(
 )
 
 class Inventory {
-    companion object Repo {
-        private var items:Array<Item> = arrayOf(
+    companion object {
+        private val items:Array<Item> = arrayOf(
                 createItem("+5 Dexterity Vest", 10, 20),
                 createItem(AGED_BRIE, 2, 0),
                 createItem("Elixir of the Mongoose", 5, 7),
