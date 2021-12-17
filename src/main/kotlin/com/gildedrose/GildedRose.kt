@@ -8,6 +8,4 @@ class GildedRose(
             it.updateQuality()
         }
     }
-
-
 }
