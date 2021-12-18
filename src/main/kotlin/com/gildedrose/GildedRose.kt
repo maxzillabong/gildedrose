@@ -5,7 +5,7 @@ class GildedRose(
 ) {
     fun updateQuality() {
         items.forEach {
-            it.updateQuality()
+            getManager(it).updateQuality()
         }
     }
 }

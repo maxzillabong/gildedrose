@@ -5,7 +5,7 @@ import org.junit.Test
 class GildedRoseTest {
     @Test fun updateQuality () {
         CombinationApprovals.verifyAllCombinations(fun (name:String, sellin:Int, quality:Int): String {
-            val items = arrayOf(Inventory.createItem(name,sellin, quality))
+            val items = arrayOf(Item(name,sellin, quality))
             GildedRose(items).updateQuality()
             val (item) = items
             return item.toString()
