@@ -80,12 +80,12 @@
 [Sulfuras, Hand of Ragnaros, 11, 50] => Sulfuras, Hand of Ragnaros, 11, 50 
 [Conjured Mana Cake, -1, 0] => Conjured Mana Cake, -2, 0 
 [Conjured Mana Cake, -1, 1] => Conjured Mana Cake, -2, 0 
-[Conjured Mana Cake, -1, 49] => Conjured Mana Cake, -2, 47 
-[Conjured Mana Cake, -1, 50] => Conjured Mana Cake, -2, 48 
+[Conjured Mana Cake, -1, 49] => Conjured Mana Cake, -2, 45 
+[Conjured Mana Cake, -1, 50] => Conjured Mana Cake, -2, 46 
 [Conjured Mana Cake, 0, 0] => Conjured Mana Cake, -1, 0 
 [Conjured Mana Cake, 0, 1] => Conjured Mana Cake, -1, 0 
-[Conjured Mana Cake, 0, 49] => Conjured Mana Cake, -1, 47 
-[Conjured Mana Cake, 0, 50] => Conjured Mana Cake, -1, 48 
+[Conjured Mana Cake, 0, 49] => Conjured Mana Cake, -1, 45 
+[Conjured Mana Cake, 0, 50] => Conjured Mana Cake, -1, 46 
 [Conjured Mana Cake, 2, 0] => Conjured Mana Cake, 1, 0 
 [Conjured Mana Cake, 2, 1] => Conjured Mana Cake, 1, 0 
 [Conjured Mana Cake, 2, 49] => Conjured Mana Cake, 1, 47 

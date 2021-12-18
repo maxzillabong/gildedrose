@@ -53,7 +53,7 @@ class SulfurasManager (override var item: Item): ItemManager(item) {
 
 class ConjuredManager (override var item: Item): ItemManager(item) {
     override fun updateQuality() {
-        item.quality -= 2
+        item.quality -= if (item.sellIn > 0) 2 else 4
         item.sellIn -= 1
         correct()
     }
