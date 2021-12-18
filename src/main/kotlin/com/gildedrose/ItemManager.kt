@@ -13,7 +13,6 @@ open class ItemManager (open var item: Item) {
     open fun updateQuality() {
         item.sellIn -= 1
         item.quality -= if (item.sellIn < 0) 2 else 1 //once sellin drop below 0, quality decrease 2x
-        if (item.quality < 0) item.quality = 0 // quality cannot drop below 0
         correct()
     }
     fun correct () {
